@@ -1,0 +1,4 @@
+kill -l SIGKILL
+La terminal devuelve 9
+kill -l SIGSTOP
+La terminal devuelve 19

@@ -1,0 +1,15 @@
+a.
+El principal objetivo del codigo es el de crear o abrir (si la memoria ya existe) memoria compartida.
+En la línea 2 podemos ver como se llama a shm_open con el fin de crear el segmento de memoria compartida, para esto en oflag se introducen los argumentos O_RDWR, para leer y escribir, O_CREAT | O_EXCL, con estos dos argumentos juntos se consigue que en caso de que ya exista la memoria compartida la funcion devuelva -1.
+Pasamos a la línea 3 comprueba si existe, si es así lo trata de abrir, por eso no se usan los mismos argumentos que antes, ahora se trata de abrir la memoria. Si eso devuelve error, no se puede abrir, y si el return no señalaba que existia la memoria pues es que ha habido un error que nosotros no podemos evitar.
+
+El sentido de este control de errores es para evitar volver a crear la misma memoria en caso de que haya sido creada con anterioridad.
+
+b.
+Para asignar un tamaño de 1000 B tendriamos que usar la función ftruncate y poner como primer argumento el descriptor de fichero de la memoria compartida y por ultimo el tamaño en bityes.
+ftruncate(fd, 1000*(sizeof(char)));
+
+Para evitar inicializar o destruir lo ya incializado habría que eliminar desde la linea 3 hasta la 15 y en la primera llamada a shm_open como segundo argumento solo tendriamos que usar O_RDWR | O_CREAT.
+
+c.
+Para forzar esta inicializacion lo primero sera que al final del programa todos los procesos hagan close y el proceso que ha creado la memoria haga unlink, así la eliminamos. Después al hacer shm_open debemos usar como segundo argumento solo O_RDWR | O_CREAT sin O_EXCL, así evitaremos que en caso de ya existir devuelva error.

@@ -1,0 +1,1 @@
+Después de escribir el programa, compilarlo y ejecutarlo, lo que se puede observar al hacer el comando "top" es como existe un proceso que ocupa el 100% de la cpu, ese proceso tiene como "ORDEN" el nombre del ejecutable que se esta ejecutando.

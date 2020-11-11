@@ -1,0 +1,4 @@
+Para corregir el error de los huerfanos podríamos hacer un loop con la función "wait"
+con el fin de esperar a que todos los hijos terminen de ejecutarse.
+while(wait(NULL) != -1) Por eso hacemos un loop que ejecute la función wait, hasta que
+devuelva error (-1) lo que significa que el proceso padre no tiene hijos.

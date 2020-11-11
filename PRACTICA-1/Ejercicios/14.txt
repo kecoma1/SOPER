@@ -1,0 +1,11 @@
+A -
+    He escrito en el pipe
+    He recibido el string: Hola a todos!
+B - 
+    Al parecer se queda esperando una respuesta y el programa no acaba.
+    Como el proceso padre no ha cerrado su extremo no puede saber cuando el proceso
+    hijo ha acabado de escribir por eso el programa no acaba, porque en la linea de 
+    codigo nbytes = read(fd[0], readbuffer, sizeof(readbuffer)); primero devuelve 15
+    (que es lo que mide la string) y después devuelve 0, solo si se cierra el extremo
+    de escritura, si no se cierra solo devuelve 15 y el padre se queda esperando a que 
+    este devuelva 0.

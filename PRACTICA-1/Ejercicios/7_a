@@ -1,0 +1,1 @@
+No, no se puede saber a priori debido a que los procesos creados se ejecutan a la vez, al ejecutarse a la vez puede printear primero el hijo o el padre.

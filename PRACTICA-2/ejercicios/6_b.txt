@@ -1,0 +1,1 @@
+Al finalizar la espera el mensaje se imprime. Porque durante la espera la mascara no permitia la entrada de esas señales, despues de la espera se restaura la mascara y la señal que se habia quedado bloqueada llega al proceso, y el proceso se sigue ejecutando imprimiendo el mensaje.

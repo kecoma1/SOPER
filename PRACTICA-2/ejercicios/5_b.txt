@@ -1,0 +1,3 @@
+Porque las funciones que usa la librería stdio, no son "async-signal-safe", estas funciones usan un buffer que al recibir una señal puede cambiar completamente, por eso se recomienda que:
+1. El signal handler llame solo a funciones "async-signal-safe".
+2. El signal handler use una variable global.

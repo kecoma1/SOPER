@@ -1,0 +1,4 @@
+grep molino don\ \quijote.txt >> aventuras.txt
+
+Con grep buscamos las palabras (en este caso "molino") que existan dentro de un archivo (en este caso "quijote.txt") y luego con el simbolo >>
+añadimos al final del archivo "aventuras.txt" las lineas donde aparece molino.

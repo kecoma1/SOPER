@@ -1,0 +1,1 @@
+Por defecto el proceso detiene su ejecución y bifurca a la rutina de tratamiento de la señal, y luego, una vez finalizado, sigue la ejecución en el punto en el que había difurcado anteriormente.

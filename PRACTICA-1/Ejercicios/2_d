@@ -1,0 +1,1 @@
+ps -A -L | awk '{print $1}' | sort -u | grep --count

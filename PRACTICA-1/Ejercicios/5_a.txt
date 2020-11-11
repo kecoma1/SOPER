@@ -1,0 +1,2 @@
+Al no dejar terminar a los hilos, el programa solo escribe los caracteres que le da tiempo hasta que el hilo principal llega a la función exit.
+A veces no llegaba a escribir nada, otras escribia una 'M' o una 'H' o ambas.

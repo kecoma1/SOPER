@@ -1,0 +1,1 @@
+El printf de la función manejador aparece al hacer "ctrl + C".

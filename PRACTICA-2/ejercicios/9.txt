@@ -1,0 +1,1 @@
+Sí se podria cambiar el lugar, se podría poner despues del wait, ya que para borrar el semaforo se necesita que todos los procesos hayan cerrado el semaforo.

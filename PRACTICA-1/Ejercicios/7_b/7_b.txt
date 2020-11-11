@@ -1,0 +1,6 @@
+Al cambiar los prints podemos ver que siempre se imprime el 
+mismo PID para el padre pero el del hijo nunca es el mismo, 
+esto es porque se generan procesos diferentes. Lo que también
+se puede ver es que sigue sin haber un orden concreto, ya que 
+si lo ejecutamos varias veces el orden en que se printean los
+datos es diferente.

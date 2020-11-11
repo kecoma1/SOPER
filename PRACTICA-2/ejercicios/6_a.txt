@@ -1,0 +1,1 @@
+Al recibir las señales SIGUSR1 y SIGUSR2 no sucede nada, pero al recibir la señal SIGINT el proceso deja de ejecutarse

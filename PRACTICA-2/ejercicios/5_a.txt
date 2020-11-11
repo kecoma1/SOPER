@@ -1,0 +1,1 @@
+En la línea 21 (llamada a sigaction) y en las líneas 10, 11 y 12 (función manejador).

@@ -1,0 +1,1 @@
+No se bloquea ninguna señal ya que en ningun momento se defina un "sa_mask", esa línea hace que no haya ninguna señal de la que el proceso deba preocuparse.

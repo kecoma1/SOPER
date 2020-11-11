@@ -1,0 +1,1 @@
+Lo que sucede es que no sucede nada, la señal se ignora y el proceso se queda esperando a que el semaforo cambie de valor ya que este tiene un valor de 0.

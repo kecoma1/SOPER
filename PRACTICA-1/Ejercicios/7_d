@@ -1,0 +1,3 @@
+Porque el padre acaba antes que el último hijo formado, por lo que el hijo se queda 
+como zombie, ya que es posible que se el padre cree otro hijo sin que el hijo anterior
+haya finalizado.

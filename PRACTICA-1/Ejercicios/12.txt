@@ -1,0 +1,27 @@
+A - 
+    Se encuentran abiertos los descriptores 0, 1 y 2
+B - 
+    stop 2 Se ha añadido un descriptor de fichero más. el 3.
+    stop 3 Se ha añadido un descriptor de fichero más. el 4.
+C -
+    Sí, se ha borrado el fichero ya que el proceso que lo abrio
+    era el único que tenía una ruta abierta a él, por lo que al 
+    hacer unlink del fichero este se ha borrado del disco duro.
+    No se sigue pudiendo acceder a él desde el directorio proc, 
+    lo unico que se puede ver es como si hacemos cat en el descriptor
+    de fichero que se creo al crear el fichero, nos pone
+    "...file1.txt (deleted)"
+    No hay forma de recuperar los datos.
+D -
+    stop 5 Ha desaparecido el descriptor de fichero relacionado
+    el fichero "file1.txt"
+    stop 6 Se ha vuelto a crear el descriptor de fichero 3 pero
+    el archivo que se ha creado es el file3.txt
+    stop 7 Se ha creado otro descriptor de fichero, el 5.
+
+    La numeración del descriptor de fichero va en orden ascendente
+    y si nos encontramos en la situacion en la que borramos el 
+    descriptor de fichero N pero existen descriptores de ficheros 
+    mayores que N, cuando se cree un nuevo archivo este tendra 
+    como descriptor de fichero el número N.
+    

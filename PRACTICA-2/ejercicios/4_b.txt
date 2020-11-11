@@ -1,0 +1,2 @@
+No se pueden capturar todas las señales, las señales SIGKILL y SIGSTOP no se pueden capturar.
+No se pueden capturar porque son las señales encargadas de detener y "matar" procesos, acciones que el sistema operativo puede ejecutar si lo ve necesario.

@@ -1,0 +1,22 @@
+A -
+    Se imprime 2 veces.
+    Al usar la funcion printf no estamos escribiendo en un buffer
+    estamos escribiendo en el descriptor de fichero directamente
+    pero como no está el caracter '\n' el hijo escribe todo lo que
+    ha sido escrito
+B -
+    El mensaje se escribe sin problema alguno.
+    Porque cuando el hijo va a escribir este se encuentra en el 
+    descriptor de fichero un \n lo que le dice que no debe escribir
+    nada que se encuentre ahí.
+C - 
+    El programa vuelve a escribir dos veces el mensaje del padre.
+    Porque al usar una funcion que lee un objeto FILE, esta funcion usa
+    un buffer, y al usar un buffer el padre escribe su mensaje en este y el 
+    hijo hace lo mismo, entonces cuando el hijo va a escribir en el descriptor
+    de fichero este escribe todo lo que hay en el buffer.
+D -
+	setvbuf(pf, buffer, _IONBF, 16); 
+    Con esta linea de codigo configuaramos 
+    el use del buffer y poniendo el argumento _IONBF le decimos al sistema
+    operativo que no use buffer

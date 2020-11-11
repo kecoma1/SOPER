@@ -1,0 +1,1 @@
+Lo que sucede es que el proceso deja de esperar y termina de ejecutarse, la llamada se ejecuta al lanzar la señal SIGNINT porque hasta que no se ejecuta el manejador, el valor del semaforo no se puede decrementar mas de lo que esta(esta a 0)

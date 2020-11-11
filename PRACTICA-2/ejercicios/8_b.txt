@@ -1,0 +1,3 @@
+Se reciben N = señales recibidas, las mismas siempre y cuando a los hijos les de tiempo a enviar las señales antes de que el padre se despierte y ejecute el manejador de SIGALRM.
+No hay ninguna garantía de recibir ese número de señales porque el padre puede recibir antes SIGALRM que las SIGUSR2 restantes.
+También es posible recibir la misma señal mientras se ejecuta el manejador, en este caso el sistema operativo la ignora. 

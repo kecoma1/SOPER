@@ -1,0 +1,1 @@
+No lo supone ya que la funcion sigaction usa "manejador" en caso de que se halla recibido la señal SIGINT, si no se recibe esa señal no lo va a ejecutar. 
