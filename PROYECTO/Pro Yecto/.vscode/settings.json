@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "sort.h": "c",
+        "global.h": "c",
+        "utils.h": "c"
+    }
+}
